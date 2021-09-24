@@ -5,12 +5,12 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class DataService {
-  
-  constructor(private http: HttpClient) {}
 
-  apiURL = "http://localhost/cocolime/inventorySys/restAPI/";
+  constructor(private http: HttpClient) { }
 
-  sendApiRequest(method, data) {
+  apiURL = "http://localhost/CAPSTONE/api/";
+
+  sendApiRequest(method: string, data: any) {
     return <any>(
       this.http.post(this.apiURL + method, btoa(JSON.stringify(data)))
     );

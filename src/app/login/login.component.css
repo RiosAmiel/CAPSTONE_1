@@ -1,0 +1,15 @@
+.logcard {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    justify-content: center;
+    display: flex;
+    margin-top: 20vh;
+}
+.input{
+    width: fit-content;
+}
