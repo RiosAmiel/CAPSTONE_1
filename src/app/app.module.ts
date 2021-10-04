@@ -49,13 +49,17 @@ import { MatTableModule } from '@angular/material/table';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { HealthServicesComponent } from './health-services/health-services.component';
+import { GuidanceComponent } from './guidance/guidance.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    HealthServicesComponent,
+    GuidanceComponent
   ],
   imports: [
     BrowserModule,
