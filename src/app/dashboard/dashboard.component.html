@@ -1,35 +1,89 @@
-<div class="s-layout">
-    <!-- Sidebar -->
-    <div class="s-layout__sidebar">
-      <a class="s-sidebar__trigger" >
-         <i class="fa fa-bars"></i>
-      </a>
-    
-      <nav class="s-sidebar__nav">
-         <ul>
-            <li>
-               <a class="s-sidebar__nav-link">
-                  <i class="fa fa-home"></i><em>Home</em>
-               </a>
-            </li>
-            <li>
-               <a class="s-sidebar__nav-link" >
-                 <i class="fa fa-user"></i><em>My Profile</em>
-               </a>
-            </li>
-            <li>
-               <a class="s-sidebar__nav-link" >
-                  <i class="fa fa-camera"></i><em>Camera</em>
-               </a>
-            </li>
-         </ul>
+<html>
+   <head>
+     <meta charset="UTF-8">
+   </head>
+   
+   <header>
+      <h1 class="logo"><a href="#">FLEXNAV</a></h1>
+      <nav class="navbar">
+        <ul class="ul">
+         
+          <li class="li"><a href="#" class="a">Projects</a></li>
+          <li class="li"><a href="#"  class="a">About</a></li>
+          <li class="li"><a href="#"  class="a">Blog</a></li>
+          <li class="li"><a href="#"  class="a">Contact</a></li>
+        </ul>
+        
       </nav>
-    </div>
-    
+    </header>
 
-    
-    <!-- Content -->
-    <main class="s-layout__content">
-      <h1>Full View, Please!</h1>
-    </main>
-    </div>
+   <body>
+ 
+     <div class="s-layout">
+         <!-- Sidebar -->
+         <div class="s-layout__sidebar">
+            <a class="s-sidebar__trigger" >
+               <i class="fa fa-bars"></i>
+            </a>
+         
+            <nav class="s-sidebar__nav">
+               <ul>
+                  <li>
+                     <a class="s-sidebar__nav-link">
+                        <i class="fa fa-home"></i><em>Home</em>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="s-sidebar__nav-link" >
+                     <i class="fa fa-user"></i><em>My Profile</em>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="s-sidebar__nav-link" >
+                        <i class="fa fa-camera"></i><em>Camera</em>
+                     </a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+         
+
+         
+         <!-- Content -->
+         
+         <div class="s-layout__content">
+          <!-- Stats container -->
+          
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Shiba Inu</mat-card-title>
+              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                bred for hunting.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-actions>
+          </mat-card>
+          
+          
+          
+         </div>
+         <button mat-fab color="primary" aria-label="Example icon button with a delete icon"  matBadge="8" matBadgePosition="after" matBadgeColor="warn" style=" position: fixed; bottom: 50px; right: 50px;">
+            <mat-icon>message</mat-icon>
+          </button>
+       </div>
+     
+     
+     
+     
+   </body>
+ </html>
